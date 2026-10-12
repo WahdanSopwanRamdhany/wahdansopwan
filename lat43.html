@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deret Fibonacci</title>
+</head>
+<body>
+  <h2>Menghitung Suku ke-20 Fibonacci</h2>
+  <p id="hasil"></p>
+
+  <script>
+    // Algoritma:
+    // 1. Tentukan a = 0 dan b = 1
+    // 2. Ulangi penjumlahan dua suku sebelumnya
+    // 3. Simpan hasil penjumlahan ke variabel c
+    // 4. Geser nilai a dan b
+    // 5. Tampilkan suku ke-20
+
+    let a = 0;
+    let b = 1;
+
+    for (let i = 3; i <= 20; i++) {
+      let c = a + b;
+      a = b;
+      b = c;
+    }
+
+    document.getElementById("hasil").textContent =
+      "Suku ke-20 Fibonacci adalah: " + b;
+  </script>
+</body>
+</html>
