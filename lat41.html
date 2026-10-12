@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menampilkan Waktu</title>
+</head>
+<body>
+
+    <button onclick="tampilkanWaktu()">
+        Tampilkan Waktu saat ini
+    </button>
+
+    <script>
+        /*
+        PSEUDOCODE:
+        1. Mulai
+        2. Buat fungsi tampilkanWaktu
+        3. Ambil tanggal dan waktu saat ini
+        4. Ubah tanggal dan waktu menjadi format yang mudah dibaca
+        5. Tampilkan tanggal dan waktu kepada pengguna
+        6. Selesai
+        */
+
+        // KODE JAVASCRIPT SEBENARNYA
+        function tampilkanWaktu() {
+            let sekarang = new Date();
+
+            let tanggalWaktu = sekarang.toLocaleString('id-ID', {
+                dateStyle: 'full',
+                timeStyle: 'medium'
+            });
+
+            alert("Tanggal dan waktu saat ini:\n" + tanggalWaktu);
+        }
+    </script>
+
+</body>
+</html>
